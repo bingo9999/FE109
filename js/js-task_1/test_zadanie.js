@@ -43,7 +43,7 @@ let VCilindra = Math.PI * Math.pow((a7 / 2), 2) * 10;
 
 console.log(VCilindra, typeof VCilindra); // 40
 
-// T E S T #4
+// T E S T .#4
 
 let r = 5;
     SKruga = Math.PI * Math.pow(r, 2);
@@ -58,6 +58,3 @@ let a = 5;
     STrap = (a + b) / 2 * h;
 
 console.log(STrap); // 60
-
-// T E S T # 6
- 
