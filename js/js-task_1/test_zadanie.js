@@ -50,7 +50,7 @@ let r = 5;
 
 console.log(SKruga); // 78,5
 
-// T E S T #5
+// T E S T  #5
 
 let a = 5;
     b = 7;
