@@ -1,6 +1,5 @@
 function greet(name){
-
-  return ;
+  return "Hello, "+name+ "how are you doing today?";
 }
 
 const areaOrPerimeter = function(l , w) {
