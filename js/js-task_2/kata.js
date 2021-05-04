@@ -1,11 +1,55 @@
-function basicOp(operation, value1, value2){
-    
-}
+/*7. Ваша задача - создать функцию, выполняющую четыре основные математические операции.
+Функция должна принимать три аргумента - операцию(string), значение1(number), значение2(number).
+Функция должна возвращать результат чисел после применения выбранной операции.
+   basicOp('+', 4, 7)         // Output: 11
+   basicOp('-', 15, 18)       // Output: -3
+   basicOp('*', 5, 5)         // Output: 25
+   basicOp('/', 49, 7)        // Output: 7 */
 
-function bonusTime(salary, bonus) {
-    
-}
 
-function getGrade (s1, s2, s3) {
+   function basicOp(operation, value1, value2) {
+    if(operation == '+') return value1 + value2;
+    if(operation == '-') return value1 - value2;
+    if(operation == '*') return value1 * value2;
+    if(operation == '/') return value1 / value2;
+}  
+
+/*8.Время бонусов в большом городе! Толстосумы потирают лапы в предвкушении... но кто заработает больше всего денег?
    
+   Постройте функцию, которая принимает два аргумента (зарплата, бонус). Зарплата будет целым числом, а бонус - булевым.
+   
+   Если бонус верен, то зарплата должна быть умножена на 10. 
+   Если бонус ложный, то толстосум не заработал достаточно денег и должен получить только заявленную зарплату.
+   Ниже приведен пример результата выполнения функции
+   ```
+   bonusTime(2, true) вернет-> '£20'
+   bonusTime(78, false) вернет-> '£78'
+   bonusTime(67890, true) вернет->  '£678900'*/
+
+   function bonusTime(salary, bonus) {
+       if(bonus == true) {
+            return "\u00A3" + salary * 10 
+        } else {
+            return "\u00A3" + salary;
+       }
+   }
+
+/*9.Вам нужно выставить оценку в аттестате успеваемости. 
+Завершите функцию так, чтобы она нашла среднее значение трех 
+переданных ей оценок и вернула буквенное значение, связанное с этой оценкой.*/
+
+function ocenki(s1, s2, s3) {
+    let itog = s1 + s2 + s3;
+    
+    if(90 <= itog <= 100) {
+        return 'A';
+    } else if(80 <= itog) {
+        return 'B';
+    } else if(70 <= itog) {
+        return 'C';
+    } else if(60 <= itog) {
+        return 'D';
+    } else if(0 <= itog) {
+        return 'F';
+    }
 }

@@ -10,3 +10,4 @@ function dutyFree(normPrice, discount, hol){
   return Math.floor(/* формула */)
 }
 
+ 
